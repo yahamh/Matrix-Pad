@@ -1,0 +1,18 @@
+<body>
+    <div class="container">
+        <div class="topBar">
+            <h4 style="text-align: center">Bienvenue Dans Notre Application De Dessin Matriciel</h4>
+        </div>
+        <div id="buttons">
+            <button class="button"  routerLink="/editor" (click)="newDrawing()">Créer un nouveau dessin</button>
+            <button class="button" *ngIf="drawingData!=null" (click)="continueDrawing()" routerLink="/editor">Continuer un dessin</button>
+            <button class="button" id="carousel" (click)="openCarousel()">Ouvrir le caroussel de dessins</button>
+            <button id="user manual" class="button" (click)="openUserGuide()">Afficher le guide d'utilisation</button>
+        </div>
+
+        <div class="footer-item">
+            <h3 class="team-name">Yacine Hamdani</h3>
+            <p>Contact: hamelyac@gmail.com </p>
+        </div>
+    </div>
+</body>
